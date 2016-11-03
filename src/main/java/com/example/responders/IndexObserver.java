@@ -8,10 +8,10 @@ import org.springframework.stereotype.Component;
 public class IndexObserver {
 
     public ResponseEntity<?> successResponse() {
-        return new ResponseEntity<Object>("successResponse", HttpStatus.OK);
+        return new ResponseEntity<>("successResponse", HttpStatus.OK);
     }
 
     public ResponseEntity<?> errorResponse() {
-        return new ResponseEntity<Object>("failure", HttpStatus.BAD_REQUEST);
+        return new ResponseEntity<>("failure", HttpStatus.BAD_REQUEST);
     }
 }

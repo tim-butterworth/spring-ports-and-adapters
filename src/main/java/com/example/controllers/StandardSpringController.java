@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@RequestMapping("standardspringcontroller")
 public class StandardSpringController {
 
     private ServiceClient serviceClient;
@@ -18,7 +19,7 @@ public class StandardSpringController {
         this.serviceClient = serviceClient;
     }
 
-    @RequestMapping(path = "standardspring/index/{value}")
+    @RequestMapping(path = "/index/{value}")
     public ResponseEntity<?> index(@PathVariable String value) {
         String response = serviceClient.getTheData(value);
 

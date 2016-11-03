@@ -10,13 +10,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class BetterFactoredController {
+@RequestMapping("withanobserverfactoredcontroller")
+public class WithAnObserverFactoredController {
 
     private final IndexUseCase indexUseCase;
     private final IndexObserver indexObserver;
 
     @Autowired
-    public BetterFactoredController(
+    public WithAnObserverFactoredController(
             IndexUseCase indexUseCase,
             IndexObserver indexObserver
     ) {

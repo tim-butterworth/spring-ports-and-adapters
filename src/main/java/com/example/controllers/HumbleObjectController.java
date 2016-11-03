@@ -1,7 +1,7 @@
 package com.example.controllers;
 
 import com.example.clients.ServiceClient;
-import com.example.usecases.RailsStyleIndexReactor;
+import com.example.usecases.HumbleObjectUseCase;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -12,21 +12,22 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 @RestController
+@RequestMapping("humbleobjectcontroller")
 public class HumbleObjectController {
 
-    private final RailsStyleIndexReactor indexReactor;
+    private final HumbleObjectUseCase indexReactor;
     private ServiceClient serviceClient;
 
     @Autowired
     public HumbleObjectController(
-            RailsStyleIndexReactor indexReactor,
+            HumbleObjectUseCase indexReactor,
             ServiceClient serviceClient
     ) {
         this.indexReactor = indexReactor;
         this.serviceClient = serviceClient;
     }
 
-    @RequestMapping(path="/rails/index/{value}")
+    @RequestMapping(path="/index/{value}")
     public void railsIndex(
             HttpServletResponse response,
             @PathVariable String value
