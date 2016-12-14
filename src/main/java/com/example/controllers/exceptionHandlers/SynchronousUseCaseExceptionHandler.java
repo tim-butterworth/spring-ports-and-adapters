@@ -14,8 +14,7 @@ public class SynchronousUseCaseExceptionHandler {
 
     @ResponseStatus(HttpStatus.BAD_REQUEST)
     @ExceptionHandler(SynchronousUseCaseException.class)
-    @ResponseBody String
-    public String handleBadRequest(HttpServletRequest request, Exception exception) {
+    @ResponseBody public String handleBadRequest(HttpServletRequest request, Exception exception) {
         return exception.getLocalizedMessage();
     }
 }
