@@ -22,7 +22,7 @@ public class WithAnAsynchronousObserverUseCaseController {
         this.indexAsynchronousUseCase = indexAsynchronousUseCase;
     }
 
-    @RequestMapping(value = "/index/{value}", produces = MediaType.TEXT_PLAIN_VALUE)
+    @RequestMapping(value = "/index/{value}")
     public Response index(@PathVariable String value) {
         Response response = new Response();
         indexAsynchronousUseCase.execute(value, new AsyncObserver(response));
