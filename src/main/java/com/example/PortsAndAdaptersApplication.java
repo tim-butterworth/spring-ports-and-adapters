@@ -9,4 +9,5 @@ public class PortsAndAdaptersApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(PortsAndAdaptersApplication.class, args);
 	}
+
 }
