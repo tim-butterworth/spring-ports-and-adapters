@@ -5,10 +5,13 @@ import com.example.usecases.IndexAsynchronousUseCase;
 import com.example.usecases.IndexStatelessUseCase;
 import com.example.usecases.IndexUseCase;
 import com.example.usecases.IndexStatefulUseCase;
+import com.example.usecases.ThingsUseCase;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Import;
 
 @Configuration
+@Import(ThingsUseCase.class)
 public class UseCasesConfig {
 
     @Bean

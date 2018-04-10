@@ -41,7 +41,7 @@ public class UseCaseObserverController {
         return observer.response();
     }
 
-    @GetMapping("/things/1")
+    @GetMapping("/things/2")
     public Thing oneMoreThing() {
         return useCase.doAnExceptionalThing();
     }
