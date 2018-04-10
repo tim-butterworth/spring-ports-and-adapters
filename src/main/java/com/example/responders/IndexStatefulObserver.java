@@ -5,7 +5,7 @@ import org.springframework.http.ResponseEntity;
 
 public class IndexStatefulObserver {
 
-    private ResponseEntity<?> response;
+    private ResponseEntity<String> response;
 
     public void successResponse() {
         response = new ResponseEntity<>("successResponse", HttpStatus.OK);
@@ -15,7 +15,7 @@ public class IndexStatefulObserver {
         response = new ResponseEntity<>("failure", HttpStatus.BAD_REQUEST);
     }
 
-    public ResponseEntity<?> getResponse() {
+    public ResponseEntity<String> getResponse() {
         return response;
     }
 }
