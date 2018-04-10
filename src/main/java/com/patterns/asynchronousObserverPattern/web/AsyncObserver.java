@@ -1,4 +1,4 @@
-package com.patterns.asynchronousObserverPattern;
+package com.patterns.asynchronousObserverPattern.web;
 
 import com.patterns.asynchronousObserverPattern.core.IndexAsynchronousObserver;
 import org.springframework.http.ResponseEntity;

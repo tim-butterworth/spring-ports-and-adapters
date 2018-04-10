@@ -1,6 +1,8 @@
-package com.patterns.humbleObjectPattern;
+package com.patterns.humbleObjectPattern.web;
 
 import com.clients.ServiceClient;
+import com.patterns.humbleObjectPattern.core.HumbleObjectObserver;
+import com.patterns.humbleObjectPattern.core.HumbleObjectUseCase;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.PathVariable;

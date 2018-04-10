@@ -1,4 +1,4 @@
-package com.patterns.humbleObjectPattern;
+package com.patterns.humbleObjectPattern.core;
 
 import javax.servlet.http.HttpServletResponse;
 

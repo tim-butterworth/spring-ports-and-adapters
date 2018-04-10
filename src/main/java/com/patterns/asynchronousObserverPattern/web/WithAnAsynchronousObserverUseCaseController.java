@@ -1,4 +1,4 @@
-package com.patterns.asynchronousObserverPattern;
+package com.patterns.asynchronousObserverPattern.web;
 
 import com.patterns.asynchronousObserverPattern.core.IndexAsynchronousUseCase;
 import org.springframework.beans.factory.annotation.Autowired;

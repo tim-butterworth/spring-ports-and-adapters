@@ -1,4 +1,4 @@
-package com.patterns.observerExceptionPattern;
+package com.patterns.observerExceptionPattern.web;
 
 import com.patterns.observerExceptionPattern.core.Thing;
 import com.patterns.observerExceptionPattern.core.ThingsUseCase;

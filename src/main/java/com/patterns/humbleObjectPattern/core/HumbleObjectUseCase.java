@@ -1,4 +1,4 @@
-package com.patterns.humbleObjectPattern;
+package com.patterns.humbleObjectPattern.core;
 
 import com.clients.ServiceClient;
 import org.springframework.stereotype.Component;
